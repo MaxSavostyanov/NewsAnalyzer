@@ -1,0 +1,10 @@
+.search__heading {
+  max-width: 400px;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  color: #FFFFFF;
+}

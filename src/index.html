@@ -12,8 +12,42 @@
   <title>NewsAnalyzer / Что творится в мире?</title>
 
 </head>
-  
-<body>
+
+<body class="body">
+  <div class="page">
+    <header class="page__header header header_white">
+      <div class="header__container container">
+        <h4 class="header__title">
+          <a href="./index.html" class="header__title-link">NewsAnalyzer</a>
+        </h4>
+        <nav class="header__nav">
+          <ul class="nav nav_header">
+            <li class="nav__item nav__item_header nav__item_selected"><a href="./index.html"
+                class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item nav__item_header"><a href="./about.html" class="nav__link">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <main class="page__main main">
+      <section class="main__search search">
+        <div class="search__container">
+            <h1 class="search__heading">Что в&nbsp;мире творится?</h1>
+            <p class="search__description">Введите в&nbsp;поиске любую тему
+            и&nbsp;узнайте, насколько популярной она была в&nbsp;новостях
+            за&nbsp;прошедшую неделю.</p>
+            <form class="search__form" name="search-news">
+              <input type="text" name="search-topic" class="search__input"
+              placeholder="Введи интересующую тебя тему" minlenght="2" maxlength="30">
+              <button class="search__button">Искать</button>
+              <span class="search__error"></span>  
+            </form>
+        </div>
+      </section>
+    </main>
+  </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
 </body>
 
