@@ -27,7 +27,7 @@ module.exports = {
 			{
 				test: /\.(png|jpg|gif|ico|svg)$/,
 				use: [
-					'file-loader?name=/img/[name].[ext]',
+					'file-loader?name=img/[name].[ext]',
 					{
 						loader: 'image-webpack-loader',
 						options: {
@@ -39,12 +39,17 @@ module.exports = {
 			},
 			{
 				test: /\.(eot|ttf|woff|woff2)$/,
-				loader: 'file-loader?name=/vendor/[name].[ext]'
+				loader: 'file-loader?name=vendor/[name].[ext]'
 			},
 			{
 				test: /\.css$/i,
 				use: [
-					(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+					(isDev ? 'style-loader' : {
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+							publicPath: '../'
+						}
+					}),
 					'css-loader',
 					'postcss-loader'
 				]
@@ -75,7 +80,7 @@ module.exports = {
 		}),*/
 		new WebpackMd5Hash(),
 		new MiniCssExtractPlugin({
-			filename: 'styles/[name].[contenthash].css',
+			filename: 'styles/[name].[contenthash].css'
 		}),
 		new OptimizeCssAssetsPlugin({
 			assetNameRegExp: /\.css$/g,
