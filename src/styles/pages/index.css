@@ -1,5 +1,5 @@
-@import url("../../vendor/fonts.css");
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Source+Sans+Pro&display=swap');
+@import url("../../vendor/fonts/fonts.css");
+/*@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Source+Sans+Pro&display=swap');*/
 
 @import url("../blocks/body/body.css");
 @import url("../blocks/page/page.css");
@@ -8,3 +8,7 @@
 @import url("../blocks/nav/nav.css");
 @import url("../blocks/main/main.css");
 @import url("../blocks/search/search.css");
+@import url("../blocks/results/resutls.css");
+@import url("../blocks/error/error.css");
+@import url("../blocks/preloader/preloader.css");
+@import url("../blocks/news/news.css");

@@ -1,0 +1,15 @@
+.news__agency {
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}

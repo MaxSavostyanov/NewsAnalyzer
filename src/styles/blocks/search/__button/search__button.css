@@ -10,9 +10,9 @@
   border: none;
   border-radius: 100px;
   outline: none;
-  font-family: Roboto,sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   transition: background-color ease-in .2s;

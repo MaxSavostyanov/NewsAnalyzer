@@ -1,0 +1,22 @@
+.results__link {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #1A1B22;
+  transition: font-size ease-in .2s;
+}
+
+.results__link>svg {
+  margin-left: 10px;
+}
+
+.results__link:hover {
+  font-size: 20px;
+}
