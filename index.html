@@ -8,13 +8,139 @@
   <meta name="desctiption" content="Дипломная работа. Курс: Фронтенд-разработчик.">
   <meta name="author" content="Студент Яндекс.Практикума Савостьянов Максим">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles/index.eb4efab3fda811d3bd05.css?28c1a732f4a66a72db6a">
+  <link rel="stylesheet" href="styles/index.e042f8df1e693d8f4af3.css?b25730009f06e07dcaa2">
   <title>NewsAnalyzer / Что творится в мире?</title>
 
 </head>
-  
-<body>
-  <script src="scripts/index.bundle.js?28c1a732f4a66a72db6a"></script>
+
+<body class="body">
+  <div class="page">
+    <header class="page__header header header_white">
+      <div class="header__container container">
+        <h4 class="header__title">
+          <a href="./index.html" class="header__title-link">NewsAnalyzer</a>
+        </h4>
+        <nav class="header__nav">
+          <ul class="nav nav_header">
+            <li class="nav__item nav__item_header nav__item_selected"><a href="./index.html"
+                class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item nav__item_header"><a href="./about.html" class="nav__link">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+    <main class="page__main main">
+      <section class="main__search search">
+        <div class="search__container">
+          <h1 class="search__heading">Что в&nbsp;мире творится?</h1>
+          <p class="search__description">Введи в&nbsp;поиске любую тему
+            и&nbsp;узнай, насколько популярной она была в&nbsp;новостях
+            за&nbsp;прошедшую неделю.</p>
+          <form class="search__form" name="search-news">
+            <input type="text" name="search-topic" class="search__input" placeholder="Введи интересующую тебя тему"
+              pattern="" maxlength="30" required>
+            <button class="search__button">Искать</button>
+            <span class="search__error"></span>
+          </form>
+        </div>
+      </section>
+
+      <section class="main__results results">
+        <div class="container">
+          <div class="results__searching preloader preloader_is-hidden">
+            <i class="preloader__circle"></i>
+            <p class="preloader__text">Идет поиск новостей...</p>
+          </div>
+          <div class="results__error error error_is-hidden">
+            <img src="./img/error_img_not_found.svg" alt="NOT FOUND" class="error__img">
+            <h3 class="error__heading">Ничего не найдено</h3>
+            <p class="error__description">К сожалению по вашему запросу
+              ничего не найдено.</p>
+          </div>
+          <div class="results__search-results">
+            <div class="results__caption">
+              <h2 class="results__heading">Результаты поиска</h2>
+              <a href="" class="results__link">Посмотреть аналитику <svg width="9" height="14" viewBox="0 0 9 14"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.58564 7.00008L0.292743 12.293L1.70696 13.7072L8.41406 7.00008L1.70696 0.292969L0.292743 1.70718L5.58564 7.00008Z"
+                    fill="#1A1B22" />
+                </svg></a>
+            </div>
+            <div class="results__news">
+              <div class="news">
+                <img src="./img/sample_news_img.png" alt="Изображение по тему новости"
+                  class="news__img">
+                <div class="news__description">
+                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
+                  <h3 class="news__heading">Национальное достояние&nbsp;&mdash; парки</h3>
+                  <p class="news__resume">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня
+                    каждый может приобщиться к&nbsp;природе.</p>
+                  <p class="news__agency">Лента.ру</p>
+                </div>
+              </div>
+              <div class="news">
+                <img src="./img/sample_news_img.png" alt="Изображение по тему новости"
+                  class="news__img">
+                <div class="news__description">
+                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
+                  <h3 class="news__heading">Лесные огоньки: история одной
+                    фотографии</h3>
+                  <p class="news__resume">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности
+                    Мексики,
+                    чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
+                  <p class="news__agency">Лента.ру</p>
+                </div>
+              </div>
+              <div class="news">
+                <img src="./img/sample_news_img.png" alt="Изображение по тему новости"
+                  class="news__img">
+                <div class="news__description">
+                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
+                  <h3 class="news__heading">&laquo;Первозданная тайга&raquo;: новый фотопроект Игоря Шпиленка</h3>
+                  <p class="news__resume">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
+                    о&nbsp;необходимости их&nbsp;сохранения. В&nbsp;этот раз он&nbsp;отправился
+                    в&nbsp;Двинско-Пинежскую
+                    тайгу, где...</p>
+                  <p class="news__agency">Лента.ру</p>
+                </div>
+              </div>
+              <div class="news">
+                <img src="./img/sample_news_img.png" alt="Изображение по тему новости"
+                  class="news__img">
+                <div class="news__description">
+                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
+                  <h3 class="news__heading">Национальное достояние&nbsp;&mdash; парки</h3>
+                  <p class="news__resume">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня
+                    каждый может приобщиться к&nbsp;природе.</p>
+                  <p class="news__agency">Лента.ру</p>
+                </div>
+              </div>
+              <div class="news">
+                <img src="./img/sample_news_img.png" alt="Изображение по тему новости"
+                  class="news__img">
+                <div class="news__description">
+                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
+                  <h3 class="news__heading">Лесные огоньки: история одной
+                    фотографии</h3>
+                  <p class="news__resume">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности
+                    Мексики,
+                    чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
+                  <p class="news__agency">Лента.ру</p>
+                </div>
+              </div>
+            </div>
+            <button class="results__btn-more">Показать ещё</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/index.bundle.js?b25730009f06e07dcaa2"></script>
 </body>
 
 </html>
