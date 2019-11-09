@@ -4,6 +4,7 @@
 .nav {
   display: flex;
   align-items: flex-start;
+  margin: 0;
   height: 80px;
   list-style-type: none;
   font-family: 'Roboto', sans-serif;
