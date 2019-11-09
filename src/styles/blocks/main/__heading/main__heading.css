@@ -1,0 +1,9 @@
+@import url('./_h3/main__heading_h3.css');
+
+.main__heading {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #1A1B22;
+}

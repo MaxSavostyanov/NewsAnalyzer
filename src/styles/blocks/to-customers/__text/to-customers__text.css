@@ -1,0 +1,7 @@
+.to-customers__text{
+  margin-bottom: 24px;
+}
+
+.to-customers__text:last-child{
+  margin-bottom: 0;
+}

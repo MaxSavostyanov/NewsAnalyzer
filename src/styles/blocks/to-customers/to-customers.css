@@ -1,0 +1,7 @@
+@import url('./__heading/to-customers__heading.css');
+@import url('./__text/to-customers__text.css');
+
+.to-customers{
+  width: 100%;
+  max-width: 815px;
+}
