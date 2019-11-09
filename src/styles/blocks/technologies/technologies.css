@@ -1,0 +1,13 @@
+@import url('./__heading/technologies__heading.css');
+@import url('./__cards/technologies__cards.css');
+@import url('./__card/technologies__card.css');
+@import url('./__label/technologies__label.css');
+@import url('./__img/technologies__img.css');
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: flex-start;
+}

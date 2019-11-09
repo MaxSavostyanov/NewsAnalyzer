@@ -1,0 +1,14 @@
+.technologies__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media screen and (max-width: 1080px) {
+  .technologies__cards {
+    max-width: 100%;
+  }
+} 
