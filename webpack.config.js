@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
 	entry: {
 		index: './src/js/index.js',
-		//about: './src/js/about.js',
+		about: './src/js/about.js',
 		//analytics: './src/js/analytics.js'
 	},
 	output: {
@@ -64,14 +64,14 @@ module.exports = {
 			chunks: ['index'],
 			filename: 'index.html'
 		}),
-		/*new HtmlWebpackPlugin({
+		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
 			template: './src/about.html',
 			chunks: ['about'],
 			filename: 'about.html'
 		}),
-		new HtmlWebpackPlugin({
+		/*new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
 			template: './src/analytics.html',
