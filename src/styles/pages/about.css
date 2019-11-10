@@ -1,4 +1,5 @@
 @import url("../../vendor/fonts/fonts.css");
+@import url('../../vendor/swiper/swiper-custom.css');
 
 @import url("../blocks/body/body.css");
 @import url("../blocks/page/page.css");
@@ -11,4 +12,6 @@
 @import url("../blocks/results/resutls.css");
 @import url("../blocks/error/error.css");
 @import url('../blocks/about-author/about-author.css');
+@import url('../blocks/commit-card/commit-card.css');
+@import url('../blocks/commits/commits.css');
 @import url('../blocks/footer/footer.css');

@@ -3,4 +3,5 @@
 @import url('./__heading/main__heading.css');
 @import url('./__paragraph/main__paragraph.css');
 @import url('./__technologies/main__technologies.css');
-@import url('./__background/main__paragraph.css');
+@import url('./__background/main__background.css');
+@import url('./__commits/main__commits.css');
