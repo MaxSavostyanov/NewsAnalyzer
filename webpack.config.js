@@ -10,7 +10,7 @@ module.exports = {
 	entry: {
 		index: './src/js/index.js',
 		about: './src/js/about.js',
-		//analytics: './src/js/analytics.js'
+		analytics: './src/js/analytics.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -71,13 +71,13 @@ module.exports = {
 			chunks: ['about'],
 			filename: 'about.html'
 		}),
-		/*new HtmlWebpackPlugin({
+		new HtmlWebpackPlugin({
 			inject: false,
 			hash: true,
 			template: './src/analytics.html',
 			chunks: ['analytics'],
 			filename: 'analytics.html'
-		}),*/
+		}),
 		new WebpackMd5Hash(),
 		new MiniCssExtractPlugin({
 			filename: 'styles/[name].[contenthash].css'
