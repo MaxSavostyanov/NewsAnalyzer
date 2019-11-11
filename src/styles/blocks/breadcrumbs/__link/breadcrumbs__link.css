@@ -1,0 +1,13 @@
+.breadcrumbs__link{
+  text-decoration: none;
+  color: #1A1B22;
+  transition: color ease-in .2s;
+}
+
+.breadcrumbs__link:hover{
+  color: rgb(143, 147, 149);             ;
+}
+
+.breadcrumbs__link:active{
+  color: rgb(0, 0, 0);
+}
