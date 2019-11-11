@@ -1,0 +1,9 @@
+@import url('./__heading/chart__heading.css');
+@import url('./__container/chart__container.css');
+@import url('./__col/chart__col.css');
+@import url('./__row/chart__row.css');
+@import url('./__progress/chart__progress.css');
+
+.chart {
+  width: 100%;
+}
