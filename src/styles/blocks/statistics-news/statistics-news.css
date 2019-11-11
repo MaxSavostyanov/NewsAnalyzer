@@ -1,0 +1,7 @@
+@import url('./__topic/statistics-news__topic.css');
+@import url('./__text/statistics-news__text.css');
+@import url('./__span/statistics-news__span.css');
+
+.statistics-news {
+  width: 100%;
+}
