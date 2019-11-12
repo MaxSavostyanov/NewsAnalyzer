@@ -1,7 +1,20 @@
-.search__container{
+.search__container {
   display: flex;
   flex-direction: column;
   width: 60%;
   max-width: 608px;
-  margin-top: 160px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 900px) {
+  .search__container {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .search__container {
+    margin-bottom: 32px;
+    width: 90%;
+  }
 }

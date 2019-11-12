@@ -11,9 +11,22 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
   height: 576px;
   background-image: url("../../../img/search_back.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 900px) {
+  .search {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .search {
+    height: 536px;
+  }
 }

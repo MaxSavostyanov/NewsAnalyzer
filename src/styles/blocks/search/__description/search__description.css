@@ -1,9 +1,22 @@
 .search__description {
   max-width: 550px;
-  margin-top: 32px;
+  margin-bottom: 64px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  .search__description {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .search__description {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }

@@ -27,3 +27,19 @@
   background: #2A65CC;
   cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  .search__button {
+    height: 56px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .search__button {
+    position: static;
+    width: 100%;
+    height: 56px;
+    font-size: 18px;
+  }
+}
