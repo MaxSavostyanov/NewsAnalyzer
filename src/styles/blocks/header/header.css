@@ -11,3 +11,15 @@
   height: 80px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    height: 56px;
+  }
+}

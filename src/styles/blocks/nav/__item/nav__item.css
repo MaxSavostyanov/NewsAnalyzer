@@ -13,3 +13,19 @@
   color:inherit;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 900px) {
+  .nav__item {
+    height: 62px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .nav__item {
+    margin-right: 11px;
+    height: 54px;
+    font-size: 16px;
+  }
+}
