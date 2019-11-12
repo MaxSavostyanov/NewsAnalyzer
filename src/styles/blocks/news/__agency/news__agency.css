@@ -13,3 +13,10 @@
   text-transform: uppercase;
   color: #B6BCBF;
 }
+
+@media screen and (max-width: 900px) {
+  .news__agency {
+    bottom: 16px;
+    left: 16px;
+  }
+}
