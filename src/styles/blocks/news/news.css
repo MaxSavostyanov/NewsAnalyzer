@@ -12,12 +12,13 @@
   background: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
-  transition: box-shadow ease-in .2s;
+  transition: box-shadow, transform ease-in .2s;
 }
 
 .news:hover{
   cursor: pointer;
   box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.31);
+  transform: translateY(-5px);
 }
 
 .news:active{
