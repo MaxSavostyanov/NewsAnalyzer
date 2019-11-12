@@ -1,7 +1,11 @@
-
-.about-author__description{
+.about-author__description {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  width: 600px;
+}
+
+@media screen and (max-width:599px) {
+  .about-author__description {
+    width: 100%;
+  }
 }

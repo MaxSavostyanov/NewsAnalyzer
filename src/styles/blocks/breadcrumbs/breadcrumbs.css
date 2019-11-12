@@ -1,3 +1,7 @@
+@import url('./__link/breadcrumbs__link.css');
+@import url('./__separator/breadcrumbs__separator.css');
+
+
 .breadcrumbs {
   width: 100%;
   font-family: 'Roboto', sans-serif;

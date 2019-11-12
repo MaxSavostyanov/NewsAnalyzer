@@ -12,3 +12,9 @@
   .about-author__text:last-child{
     margin-bottom: 0;
   }
+
+  @media screen and (max-width: 900px){
+    .about-author__text{
+      margin-bottom: 16px;
+      }
+  }
