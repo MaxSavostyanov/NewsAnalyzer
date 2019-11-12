@@ -1,0 +1,7 @@
+@media screen and (max-width: 599px) {
+  .footer__social{
+    position: absolute;
+    top: 22px;
+    right: 5%;
+  }
+}

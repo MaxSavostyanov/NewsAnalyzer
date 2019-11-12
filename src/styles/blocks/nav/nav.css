@@ -19,6 +19,9 @@
   .nav {
     font-size: 16px;
   }
+  .nav.nav_footer{
+    flex-direction: column;
+  }
 }
 
 
