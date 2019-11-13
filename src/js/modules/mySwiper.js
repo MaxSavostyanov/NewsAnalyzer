@@ -34,12 +34,6 @@ const mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 4,
       spaceBetween: 8,
       slidesOffsetBefore: -20,
-    },
-    // when window width is >= 1981px
-    1981: {
-      slidesPerView: 8,
-      spaceBetween: 8,
-      slidesOffsetBefore: -20,
     }
   },
 

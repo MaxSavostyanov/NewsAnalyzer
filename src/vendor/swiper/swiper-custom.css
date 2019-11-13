@@ -4,6 +4,8 @@
   position: relative;
   padding: 60px 0 120px;
   height: 288px;
+  width: 100%;
+  max-width: 1980px;
 }
 
 .swiper-button-prev {
@@ -80,12 +82,15 @@
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 60px;
+  bottom: 30px;
   left: 0;
   width: 100%;
 }
 
 @media screen and (max-width: 768px) {
+  .swiper-container {
+    padding: 60px 0;
+  }
   .swiper-pagination {
       margin-top: 32px;
   }

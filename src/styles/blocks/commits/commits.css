@@ -1,5 +1,14 @@
 @import url('./__caption/commits__caption.css');
+@import url('./__heading/commit__heading.css');
+@import url('./__link/commits__link.css');
+@import url('./__button/commits__button.css');
 
-.commits__caption{
+.commits{
   padding-top: 70px;
+}
+
+@media screen and (max-width: 500px){
+  .commits{
+    padding: 40px 0;
+  }
 }
