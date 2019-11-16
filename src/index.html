@@ -61,8 +61,8 @@
           <div class="results__search-results">
             <div class="results__caption">
               <h2 class="results__heading">Результаты поиска</h2>
-              <a href="./analytics.html" class="results__link">Посмотреть аналитику <svg width="9" height="14" viewBox="0 0 9 14"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="./analytics.html" class="results__link">Посмотреть аналитику <svg width="9" height="14"
+                  viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.58564 7.00008L0.292743 12.293L1.70696 13.7072L8.41406 7.00008L1.70696 0.292969L0.292743 1.70718L5.58564 7.00008Z"
                     fill="#1A1B22" />
@@ -138,7 +138,11 @@
         </div>
       </section>
       <section class="main__about-author about-author container">
-        <img src="<%=require('./img/avatar.png')%>" alt="Аватар автора" class="about-author__avatar">
+        <picture>
+          <img src="<%=require('./img/avatar.png')%>" alt="Аватар автора"
+            srcset="<%=require('./img/avatar@2x.png')%> 2x, <%=require('./img/avatar.png')%> 1x"
+            class="about-author__avatar">
+        </picture>
         <div class="about-author__description">
           <h3 class="about-author__heading">Об авторе</h3>
           <p class="about-author__text">Это блок с описаением автора проекта. Здесь следует указать, как вас зовут, чем
@@ -151,13 +155,14 @@
     <footer class="footer container">
       <span class="footer__copyright">&copy;&nbsp;2019 Supersite</span>
       <nav class="footer__nav">
-          <ul class="nav nav_footer">
-              <li class="nav__item nav__item_footer"><a href="./index.html"
-                  class="nav__link nav__link_footer">Главная</a>
-              </li>
-              <li class="nav__item nav__item_footer"><a href="./about.html" class="nav__link nav__link_footer">О проекте</a></li>
-              <li class="nav__item nav__item_footer"><a href="https://praktikum.yandex.ru/frontend/" class="nav__link nav__link_footer" target="_blank">Яндекс.Практикум</a></li>
-            </ul>
+        <ul class="nav nav_footer">
+          <li class="nav__item nav__item_footer"><a href="./index.html" class="nav__link nav__link_footer">Главная</a>
+          </li>
+          <li class="nav__item nav__item_footer"><a href="./about.html" class="nav__link nav__link_footer">О проекте</a>
+          </li>
+          <li class="nav__item nav__item_footer"><a href="https://praktikum.yandex.ru/frontend/"
+              class="nav__link nav__link_footer" target="_blank">Яндекс.Практикум</a></li>
+        </ul>
       </nav>
       <div class="footer__social">
         <a href="https://github.com/MaxSavostyanov/NewsAnalyzer" class="footer__social-link" target="_blank">
