@@ -1,17 +1,17 @@
-.main__heading.main__heading_h3 {
+.main__heading.main__heading_section {
   font-size: 40px;
   line-height: 46px;
 }
 
 @media screen and (max-width: 900px) {
-  .main__heading.main__heading_h3 {
+  .main__heading.main__heading_section {
     font-size: 32px;
     line-height: 34px;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .main__heading.main__heading_h3 {
+  .main__heading.main__heading_section {
     font-size: 30px;
     line-height: 40px;
   }
