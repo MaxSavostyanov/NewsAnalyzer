@@ -1,0 +1,31 @@
+@import url("./_header/nav__item_header.css");
+@import url("./_selected/nav__item_selected.css");
+
+.nav__item{
+  display: flex;
+  align-items: center;
+  height: 78px;
+  margin-right: 34px;
+  transition: color ease-in .2s;
+}
+
+.nav__item:hover{
+  color:inherit;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav__item {
+    height: 62px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .nav__item {
+    margin-right: 11px;
+    height: 54px;
+    font-size: 16px;
+  }
+}

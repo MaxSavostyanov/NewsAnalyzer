@@ -1,0 +1,20 @@
+.commit-card__text {
+  clear: both;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+}
+
+.commit-card__text_code {
+  margin: 0;
+  display: inline-block;
+  padding: 0 3px;
+  background: #F5F6F7;
+  border: 1px solid #D1D2D6;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

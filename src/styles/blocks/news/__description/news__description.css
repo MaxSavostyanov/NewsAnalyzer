@@ -1,0 +1,15 @@
+.news__description {
+  margin: 0;
+  margin-bottom:28px;
+  padding: 0 24px;
+  height: 310px;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .news__description {
+    padding: 0 16px;
+    height: 185px;
+  }
+}

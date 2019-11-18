@@ -1,0 +1,6 @@
+@import url('./_footer/nav__link_footer.css');
+
+.nav__link{
+  text-decoration: none;
+  color:inherit;
+}

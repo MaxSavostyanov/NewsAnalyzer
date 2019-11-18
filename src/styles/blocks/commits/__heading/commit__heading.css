@@ -1,0 +1,6 @@
+@media screen and (max-width: 900px){
+  .commits__heading{
+    display: inline-block;
+    max-width: 336px;
+  }
+}

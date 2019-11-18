@@ -1,0 +1,27 @@
+@import url("./__img/news__img.css");
+@import url("./__heding/news__heading.css");
+@import url("./__resume/news__resume.css");
+@import url("./__agency/news__agency.css");
+@import url("./__date/news__date.css");
+@import url("./__description/news__description.css");
+
+
+.news {
+  position: relative;
+  height: 585px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow, transform ease-in .2s;
+}
+
+.news:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.31);
+  transform: translateY(-5px);
+}
+
+.news:active{
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.25);
+}

@@ -1,0 +1,8 @@
+.footer__social-icon:hover>path{
+  fill: #347EFF;
+}
+
+.footer__social-icon:active>path{
+  fill: #2A65CC;
+}
+

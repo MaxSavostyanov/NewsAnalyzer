@@ -1,0 +1,17 @@
+.nav__link.nav__link_footer{
+  transition: transform ease-in .2s;
+}
+
+.nav__link.nav__link_footer:hover{
+  transform: scaleY(1.2);
+}
+
+.nav__link.nav__link_footer:active{
+  transform: scaleY(0.9);
+}
+
+.nav__link.nav__link_footer:visited{
+  color: rgb(80, 80, 80);
+}
+
+

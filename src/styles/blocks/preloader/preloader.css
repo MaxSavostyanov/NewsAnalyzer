@@ -1,0 +1,11 @@
+@import url('./__circle/preloader__circle.css');
+@import url('./__text/preloader__text.css');
+@import url('./_is-hidden/preloader_is-hidden.css');
+@import url('./__block/preloader__block.css');
+
+.preloader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 374px;
+}

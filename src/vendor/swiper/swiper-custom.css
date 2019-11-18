@@ -1,0 +1,103 @@
+@import url(../../../node_modules/swiper/css/swiper.min.css);
+
+.swiper-container {
+  position: relative;
+  padding: 60px 0 120px;
+  height: 288px;
+  width: 100%;
+  max-width: 1980px;
+}
+
+.swiper-button-prev {
+  margin: 0;
+  top: 60px;
+  left: 0px;
+  width: 88px;
+  height: 288px;
+  background: linear-gradient(90deg, rgb(245, 246, 247), rgba(255,255,0,0));
+  cursor: pointer;
+  -webkit-tap-highlight-color: none;
+}
+
+.swiper-button-prev::after {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 42%;
+  left: 24px;
+  background-image: url(../../img/slider-control-lt.svg);
+  background-size: cover;
+  content: "";
+}
+
+.swiper-button-prev:hover{
+  background: linear-gradient(to right, rgb(200, 200, 200), rgba(255,255,0,0));
+}
+
+.swiper-button-next {
+  margin: 0;
+  top: 60px;
+  right: 0px;
+  width: 88px;
+  height: 288px;
+  background: linear-gradient(to left, rgb(245, 246, 247), rgba(255,255,0,0));
+  cursor: pointer;
+  -webkit-tap-highlight-color: none;
+  transition: background-color ease-in .2s;
+}
+
+.swiper-button-next::after {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 42%;
+  right: 24px;
+  background-image: url(../../img/slider-control-rt.svg);
+  background-size: cover;
+  content: "";
+}
+
+.swiper-button-next:hover{
+  background: linear-gradient(to left, rgb(200, 200, 200), rgba(255,255,0,0));
+}
+
+.swiper-pagination {
+  bottom: 25px;
+}
+
+.swiper-pagination-bullet {
+  margin-right: 8px;
+}
+
+.swiper-pagination-bullet:last-of-type {
+  margin-right: 8px;
+}
+
+.swiper-pagination-bullet:hover{
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background: black;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    padding: 60px 0;
+  }
+  .swiper-pagination {
+      margin-top: 32px;
+  }
+  .swiper-button-prev {
+      display: none;
+  }
+  .swiper-button-next {
+      display: none;
+  }
+}

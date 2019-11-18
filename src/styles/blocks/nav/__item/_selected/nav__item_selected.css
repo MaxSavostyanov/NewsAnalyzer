@@ -1,0 +1,4 @@
+.nav__item_selected{
+  border-bottom: 2px solid;
+  color: inherit;
+}

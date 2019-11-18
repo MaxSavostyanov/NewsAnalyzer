@@ -1,0 +1,35 @@
+.commits__button {
+  display: none;
+  width: 90%;
+  margin: 0 5% 32px;
+  height: 56px;
+  border: 1px solid #1A1B22;
+  box-sizing: border-box;
+  border-radius: 80px;
+  background: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  transition: box-shadow ease-in .2s;
+}
+
+.commits__button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.31);
+}
+
+.commits__button:active {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 500px) {
+  .commits__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

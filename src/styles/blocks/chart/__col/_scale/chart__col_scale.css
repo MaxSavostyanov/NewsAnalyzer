@@ -1,0 +1,5 @@
+.chart__col.chart__col_scale {
+  width: calc(100% - 104px);
+  display: flex;
+  justify-content: space-between;
+}

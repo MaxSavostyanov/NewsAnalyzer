@@ -1,0 +1,5 @@
+.chart__col.chart__col_amount {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 104px);
+}

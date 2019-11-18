@@ -1,0 +1,25 @@
+@import url("./__container/header__container.css");
+@import url("./__title/header__title.css");
+@import url("./__title-link/header__title-link.css");
+@import url("./_white/header_white.css");
+@import url("./_black/header_black.css");
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    height: 56px;
+  }
+}

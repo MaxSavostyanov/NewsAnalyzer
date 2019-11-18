@@ -1,0 +1,12 @@
+@import url('./_caption/chart__row_caption.css');
+@import url('./_scale/chart___row_scale.css');
+
+.chart__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.chart__row:nth-last-child(2) {
+  margin-bottom: 0;
+}

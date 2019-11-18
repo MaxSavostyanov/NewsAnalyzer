@@ -1,0 +1,15 @@
+.results__heading {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22
+}
+
+@media screen and (max-width: 599px){
+  .results__heading{
+    margin-bottom: 16px;
+  }
+}
