@@ -8,7 +8,7 @@
   <meta name="desctiption" content="Дипломная работа. Курс: Фронтенд-разработчик.">
   <meta name="author" content="Студент Яндекс.Практикума Савостьянов Максим">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles/index.7760bf1e8df1bcf04c43.css?fbc97e59da8fa9cc1592">
+  <link rel="stylesheet" href="styles/index.1da3b932c5340205ffe0.css?69cd87a0238a56b5b11a">
   <title>NewsAnalyzer / Что творится в мире?</title>
 </head>
 
@@ -37,11 +37,11 @@
           <p class="search__description">Введи в&nbsp;поиске любую тему
             и&nbsp;узнай, насколько популярной она была в&nbsp;новостях
             за&nbsp;прошедшую неделю.</p>
-          <form class="search__form" name="search-news">
+          <form class="search__form" name="searchNews">
             <input type="text" name="search-topic" class="search__input" placeholder="Введи интересующую тебя тему"
-              pattern="" maxlength="30" required>
-            <button class="search__button">Искать</button>
-            <span class="search__error"></span>
+              maxlength="30" required>
+            <button type="submit" class="search__button">Искать</button>
+            <span class="search__error">Ошибка</span>
           </form>
         </div>
       </section>
@@ -54,13 +54,18 @@
             </div>
             <p class="preloader__text">Идет поиск новостей...</p>
           </div>
-          <div class="results__error error error_is-hidden">
+          <div class="results__error error error_is-hidden" id="not_found">
             <img src="img/error_img_not_found.svg" alt="NOT FOUND" class="error__img">
             <h3 class="error__heading">Ничего не найдено</h3>
             <p class="error__description">К сожалению по вашему запросу
               ничего не найдено.</p>
           </div>
-          <div class="results__search-results">
+          <div class="results__error error error_is-hidden" id="error_server">
+            <img src="img/error_img_not_found.svg" alt="NOT FOUND" class="error__img">
+            <h3 class="error__heading">Ошибка сервера</h3>
+            <p class="error__description">Сервер не дал ответа</p>
+          </div>
+          <div class="results__search-results results__search-results_is-hidden">
             <div class="results__caption">
               <h2 class="results__heading">Результаты поиска</h2>
               <a href="./analytics.html" class="results__link">Посмотреть аналитику <svg width="9" height="14"
@@ -70,72 +75,8 @@
                     fill="#1A1B22" />
                 </svg></a>
             </div>
-            <div class="results__news">
-              <div class="news">
-                <img src="img/sample_news_img.png" alt="Изображение по тему новости"
-                  class="news__img">
-                <div class="news__description">
-                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
-                  <h3 class="news__heading">Национальное достояние&nbsp;&mdash; парки</h3>
-                  <p class="news__resume">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня
-                    каждый может приобщиться к&nbsp;природе.</p>
-                  <p class="news__agency">Лента.ру</p>
-                </div>
-              </div>
-              <div class="news">
-                <img src="img/sample_news_img.png" alt="Изображение по тему новости"
-                  class="news__img">
-                <div class="news__description">
-                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
-                  <h3 class="news__heading">Лесные огоньки: история одной
-                    фотографии</h3>
-                  <p class="news__resume">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности
-                    Мексики,
-                    чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
-                  <p class="news__agency">Лента.ру</p>
-                </div>
-              </div>
-              <div class="news">
-                <img src="img/sample_news_img.png" alt="Изображение по тему новости"
-                  class="news__img">
-                <div class="news__description">
-                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
-                  <h3 class="news__heading">&laquo;Первозданная тайга&raquo;: новый фотопроект Игоря Шпиленка</h3>
-                  <p class="news__resume">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
-                    о&nbsp;необходимости их&nbsp;сохранения. В&nbsp;этот раз он&nbsp;отправился
-                    в&nbsp;Двинско-Пинежскую
-                    тайгу, где...</p>
-                  <p class="news__agency">Лента.ру</p>
-                </div>
-              </div>
-              <div class="news">
-                <img src="img/sample_news_img.png" alt="Изображение по тему новости"
-                  class="news__img">
-                <div class="news__description">
-                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
-                  <h3 class="news__heading">Национальное достояние&nbsp;&mdash; парки</h3>
-                  <p class="news__resume">В&nbsp;2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-                    складываться система национальных парков&nbsp;&mdash; охраняемых территорий, где и&nbsp;сегодня
-                    каждый может приобщиться к&nbsp;природе.</p>
-                  <p class="news__agency">Лента.ру</p>
-                </div>
-              </div>
-              <div class="news">
-                <img src="img/sample_news_img.png" alt="Изображение по тему новости"
-                  class="news__img">
-                <div class="news__description">
-                  <time class="news__date" datetime="2019-08-02 00:00">2 августа, 2019</time>
-                  <h3 class="news__heading">Лесные огоньки: история одной
-                    фотографии</h3>
-                  <p class="news__resume">Фотограф отвлеклась от&nbsp;освещения суровой политической реальности
-                    Мексики,
-                    чтобы запечатлеть ускользающую красоту одного из&nbsp;местных чудес природы.</p>
-                  <p class="news__agency">Лента.ру</p>
-                </div>
-              </div>
-            </div>
-            <button class="results__btn-more">Показать ещё</button>
+            <div class="results__news"></div>
+            <button class="results__btn-more results__btn-more_hidden">Показать ещё</button>
           </div>
         </div>
       </section>
@@ -184,7 +125,7 @@
       </div>
     </footer>
   </div>
-  <script src="scripts/index.bundle.js?fbc97e59da8fa9cc1592"></script>
+  <script src="scripts/index.bundle.js?69cd87a0238a56b5b11a"></script>
 </body>
 
 </html>
