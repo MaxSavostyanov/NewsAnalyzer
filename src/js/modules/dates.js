@@ -13,21 +13,41 @@ const dayInMs = 24 * 60 * 60 * 1000;
 
 function getDate(interval = 0) {
   const date = new Date(Date.now() - interval * dayInMs);
-  return  `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  return  getFormattedDateYMD(date);
 };
 
-export function getDatesArray(inteval) {
+function getCurrMonth() {
+  const date = new Date(Date.now());
+  return  date.getMonth();
+};
+
+function getDatesArray(inteval) {
   const datesArr = [];
   for(let i = inteval; i >= 0; i--){
-    datesArr.push(getDate(i));
+    datesArr.push(new Date(Date.now() - i * dayInMs));
   }
   return datesArr;
 }
 
-export function getFormattedDate(date) {
+function getDaysWeekArray() {
+  const dayWeekArr = {};
+  datesArray.forEach(date => {
+    dayWeekArr[getFormattedDateYMD(date)] = `${date.getDate()}, ${abbreviatedNamesDaysWeek[date.getDay()]}`
+  })
+  return dayWeekArr;
+}
+
+export function getFormattedDateRU(date) {
   date = new Date(date);
   return `${date.getDate()} ${namesMonthsRuGenitive[date.getMonth()]}, ${date.getFullYear()}`; 
 }
 
+export function getFormattedDateYMD(date) {
+  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`; 
+}
+
 export const dateFrom = getDate(SEARCH_TIME_INTERVAL);
 export const dateTo = getDate();
+export const datesArray = getDatesArray(SEARCH_TIME_INTERVAL);
+export const dayWeekArray = getDaysWeekArray(SEARCH_TIME_INTERVAL);
+export const currMonth = namesMonthsRu[getCurrMonth()];
