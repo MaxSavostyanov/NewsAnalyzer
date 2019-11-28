@@ -80,19 +80,19 @@ function searchNews() {
         localStorage.setItem('news', JSON.stringify(newsArray));
         localStorage.setItem('keyword', searchString.input.value.trim());
         storage = newsArray.articles;
+        if (storage.length > 0) {
+          render();
+          blockResults.classList.remove('results__search-results_is-hidden');
+        } else {
+          errorNotFound.classList.remove('error_is-hidden');
+        }
       })
       .catch(() => {
         errorServer.classList.remove('error_is-hidden');
       })
       .finally(() => {
         preloader.classList.add('preloader_is-hidden');
-        blockResults.classList.remove('results__search-results_is-hidden');
         searchString.activateBtnSubmit();
-        if (storage.length > 0) {
-          render();
-        } else {
-          errorNotFound.classList.remove('error_is-hidden');
-        }
       })
   }
 }
@@ -106,6 +106,6 @@ if(localStorage.getItem('news')){
   storage = JSON.parse(localStorage.getItem('news')).articles;
   searchString.input.value = localStorage.getItem('keyword');
   searchString.activateBtnSubmit();
-  blockResults.classList.remove('results__search-results_is-hidden');
   render();
+  blockResults.classList.remove('results__search-results_is-hidden');
 }
