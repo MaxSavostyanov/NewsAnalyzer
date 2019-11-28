@@ -1,5 +1,7 @@
+@import url('_hidden/results__btn-more_hidden.css'); 
+
 .results__btn-more {
-  margin: 56px 0 80px;
+  margin-top: 56px;
   width: 288px;
   height: 64px;
   background: #FFFFFF;
