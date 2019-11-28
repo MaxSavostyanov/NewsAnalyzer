@@ -24,5 +24,10 @@ export function getDatesArray(inteval) {
   return datesArr;
 }
 
+export function getFormattedDate(date) {
+  date = new Date(date);
+  return `${date.getDate()} ${namesMonthsRuGenitive[date.getMonth()]}, ${date.getFullYear()}`; 
+}
+
 export const dateFrom = getDate(SEARCH_TIME_INTERVAL);
 export const dateTo = getDate();
