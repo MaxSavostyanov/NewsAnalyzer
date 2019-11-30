@@ -1,9 +1,9 @@
 export class Chart {
   constructor(container, dayWeekObj, mentions, currMonth) {
-    this.container = container;
-    this.dayWeekObj = dayWeekObj;
-    this.mentions = mentions;
-    this.month = currMonth;
+    this._container = container;
+    this._dayWeekObj = dayWeekObj;
+    this._mentions = mentions;
+    this._month = currMonth;
   }
 
   createChart() {
@@ -12,7 +12,7 @@ export class Chart {
     <div class="chart__container">
       <div class="chart__row chart__row_caption">
         <div class="chart__col chart__col_date">
-          <p>Дата<br>(${this.month})</p>
+          <p>Дата<br>(${this._month})</p>
         </div>
         <div class="chart__col chart__col_amount">
           <p>Кол-во упоминаний</p>
@@ -30,9 +30,9 @@ export class Chart {
       </div>`;
     stringHTML += caption;
 
-    for (let date in this.dayWeekObj) {
-      const day = this.dayWeekObj[date];
-      const mentions = this.mentions[day] ? this.mentions[day] : 0;
+    for (let date in this._dayWeekObj) {
+      const day = this._dayWeekObj[date];
+      const mentions = this._mentions[day] ? this._mentions[day] : 0;
       const mentionsStyle = !mentions ? 'chart__progress_null' : '';
       const row = `<div class="chart__row">
       <div class="chart__col chart__col_date">
@@ -57,6 +57,6 @@ export class Chart {
   </div>`
     stringHTML += scaleBottom;
 
-    this.container.insertAdjacentHTML('afterbegin', stringHTML.trim());
+    this._container.insertAdjacentHTML('afterbegin', stringHTML.trim());
   }
 }

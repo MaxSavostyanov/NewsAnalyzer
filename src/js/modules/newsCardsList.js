@@ -1,13 +1,13 @@
 export class NewsCardsList {
   constructor(container){
-    this.container = container;
+    this._container = container;
   }
 
   addCard(newsCard) {
-    this.container.appendChild(newsCard);
+    this._container.appendChild(newsCard);
   }
 
   removeChilds() {
-    [...this.container.children].forEach(newsCard => newsCard.remove());
+    [...this._container.children].forEach(newsCard => newsCard.remove());
   }
 }

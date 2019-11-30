@@ -1,17 +1,16 @@
 export class GithubApi {
   constructor(url, username, repo, token, count) {
-    this.url = url;
-    this.username = username;
-    this.repo = repo;
-    this.token = token;
-    this.countCommits = count;
-
+    this._url = url;
+    this._username = username;
+    this._repo = repo;
+    this._token = token;
+    this._countCommits = count;
   }
 
   getCommits() {
-    return fetch(`${this.url}/repos/${this.username}/${this.repo}/commits?per_page=${this.countCommits}`, {
+    return fetch(`${this._url}/repos/${this._username}/${this._repo}/commits?per_page=${this._countCommits}`, {
       headers: {
-        authorization: `token ${this.token}`,
+        authorization: `token ${this._token}`,
       }
     })
   }
