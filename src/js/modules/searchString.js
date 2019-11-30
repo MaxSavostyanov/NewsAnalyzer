@@ -28,11 +28,12 @@ export class SearchString {
 
   _validInput() {
     let value = this.input.value;
-    if (value.length > 0) {
+    if (!value.length) {
+      this.deactivateBtnSubmit();
+      this._error.textContent = 'Введите ключевое слово';
+    } else {
       this.activateBtnSubmit();
       this._error.textContent = '';
-    } else {
-      this.deactivateBtnSubmit();
     }
   }
 }
