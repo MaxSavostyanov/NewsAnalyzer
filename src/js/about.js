@@ -36,17 +36,14 @@ githubApi.getCommits().then(res => {
   })
   .then(commits => {
     storage = commits;
-    console.log(storage);
+    storage.forEach(commit => container.appendChild(commitCard.createCard(commit)));
+    sectionCommits.classList.remove("commits_is-hidden");
+    initializationSwiper();
   })
   .catch(() => {
-    preloader.classList.add("preloader_is-hidden");
     errorServer.classList.remove('error_is-hidden');
   })
   .finally(() => {
-    storage.forEach(commit => container.appendChild(commitCard.createCard(commit)));
     preloader.classList.add("preloader_is-hidden");
-    sectionCommits.classList.remove("commits_is-hidden");
-    initializationSwiper();
   });
   
-
