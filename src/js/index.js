@@ -61,6 +61,7 @@ function render() {
 
 function searchNews() {
   searchString.deactivateBtnSubmit();
+  searchString.deactivateInput();
   preloader.classList.remove('preloader_is-hidden');
   if (searchString.input.value) {
     newsCardsList.removeChilds();
@@ -93,6 +94,7 @@ function searchNews() {
       .finally(() => {
         preloader.classList.add('preloader_is-hidden');
         searchString.activateBtnSubmit();
+        searchString.activateInput();
       })
   }
 }
