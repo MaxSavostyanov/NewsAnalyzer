@@ -15,15 +15,32 @@ export class NewsCard {
     img.src = newsData.urlToImage;
     img.alt = 'Изображение по теме новости';
     template.appendChild(img);
+    
+    const description = document.createElement('div');
+    description.classList.add('news__description');
+    template.appendChild(description);
 
-    const description = `
-  <div class="news__description">
-    <time class="news__date" datetime="2019-08-02 00:00">${getFormattedDateRU(newsData.publishedAt)}</time>
-    <h3 class="news__heading">${newsData.title}</h3>
-    <p class="news__resume">${newsData.description}</p>
-    <p class="news__agency">${newsData.source.name}</p>
-  </div>`.trim();
-    template.insertAdjacentHTML('beforeend', description);
+    const date = document.createElement('time');
+    date.classList.add('news__date');
+    //добавить аттрибут datetime в формате YYYY-MM-DD hh:mm
+    date.textContent = getFormattedDateRU(newsData.publishedAt);
+    description.appendChild(date);
+
+    const heading = document.createElement('h3');
+    heading.classList.add('news__heading');
+    heading.textContent = newsData.title;
+    description.appendChild(heading);
+
+    const resume = document.createElement('p');
+    resume.classList.add('news__resume');
+    resume.textContent = newsData.description;
+    description.appendChild(resume);
+
+    const agency = document.createElement('p');
+    agency.classList.add('news__agency');
+    agency.textContent = newsData.source.name;
+    description.appendChild(agency);
+
     return template;
   }
 }
