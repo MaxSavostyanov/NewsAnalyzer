@@ -7,12 +7,14 @@
 
 
 .news {
+  display: block;
   position: relative;
   height: 585px;
   background: #FFFFFF;
   border-radius: 10px;
   overflow: hidden;
   transition: box-shadow, transform ease-in .2s;
+  text-decoration: none;
 }
 
 .news:hover{

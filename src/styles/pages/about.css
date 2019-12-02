@@ -10,6 +10,7 @@
 @import url("../blocks/to-customers/to-customers.css");
 @import url("../blocks/technologies/technologies.css");
 @import url("../blocks/results/resutls.css");
+@import url("../blocks/preloader/preloader.css");
 @import url("../blocks/error/error.css");
 @import url('../blocks/about-author/about-author.css');
 @import url('../blocks/commit-card/commit-card.css');

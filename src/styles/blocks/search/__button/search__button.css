@@ -1,10 +1,12 @@
+@import url('_active/search__button_active.css');
+
 .search__button {
   position: absolute;
   top: 0;
   right: 0;
   width: 168px;
   height: 64px;
-  background: #2f71e5;
+  background: rgba(47, 113, 229, 0.64);;
   color: #fff;
   box-shadow: 0 5px 15px rgba(14,26,57,.2);
   border: none;
@@ -15,17 +17,6 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  transition: background-color ease-in .2s;
-}
-
-.search__button:hover{
-  background: #347EFF;
-  cursor: pointer;
-}
-
-.search__button:active{
-  background: #2A65CC;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {

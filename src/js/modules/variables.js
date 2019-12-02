@@ -1,0 +1,10 @@
+export const NEWS_API_KEY = '46444d10a9d54a35b94bd39b23484150';
+export const NEWS_API_BASE_URL = 'https://newsapi.org/v2';
+export const SEARCH_TIME_INTERVAL = 6; // В днях
+export const COUNT_ARTICLES = 100; 
+export const STEP_SHOW = 3; 
+export const GITHUB_BASE_URL = 'https://api.github.com'; 
+export const GITHUB_USERNAME = 'MaxSavostyanov'; 
+export const GITHUB_REPO = 'NewsAnalyzer'; 
+export const GITHUB_TOKEN = '24dc9338e6ea8db3da123a02526c588180a94544'; 
+export const GITHUB_COUNT = '10'; 

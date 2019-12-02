@@ -2,6 +2,7 @@
 @import url('./__heading/commit__heading.css');
 @import url('./__link/commits__link.css');
 @import url('./__button/commits__button.css');
+@import url('./_is-hidden/commits_is-hidden.css');
 
 .commits{
   padding-top: 70px;

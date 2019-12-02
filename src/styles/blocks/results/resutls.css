@@ -4,6 +4,7 @@
 @import url("./__heading/results__heading.css");
 @import url("./__link/results__link.css");
 @import url("./__btn-more/results__btn-more.css");
+@import url("./__seach-results/results__search-results.css");
 
 .results {
   background: #F5F6F7;
