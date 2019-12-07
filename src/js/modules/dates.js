@@ -46,6 +46,11 @@ export function getFormattedDateYMD(date) {
   return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`; 
 }
 
+export function getFormattedDateYMDhm(date) {
+  date = new Date(date);
+  return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`; 
+}
+
 export const dateFrom = getDate(SEARCH_TIME_INTERVAL);
 export const dateTo = getDate();
 export const datesArray = getDatesArray(SEARCH_TIME_INTERVAL);

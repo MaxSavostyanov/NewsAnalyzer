@@ -1,5 +1,6 @@
 import {
   getFormattedDateRU,
+  getFormattedDateYMDhm,
 } from "./dates";
 
 export class NewsCard {
@@ -24,6 +25,7 @@ export class NewsCard {
     date.classList.add('news__date');
     //добавить аттрибут datetime в формате YYYY-MM-DD hh:mm
     date.textContent = getFormattedDateRU(newsData.publishedAt);
+    date.dateTime = getFormattedDateYMDhm(newsData.publishedAt);
     description.appendChild(date);
 
     const heading = document.createElement('h3');

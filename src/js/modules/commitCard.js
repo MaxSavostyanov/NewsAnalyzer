@@ -1,5 +1,6 @@
 import {
   getFormattedDateRU,
+  getFormattedDateYMDhm,
 } from "./dates";
 
 export class CommitCard {
@@ -14,6 +15,7 @@ export class CommitCard {
     const date = document.createElement('time');
     date.classList.add('commit-card__date');
     date.textContent = getFormattedDateRU(data.commit.author.date);
+    date.dateTime = getFormattedDateYMDhm(data.commit.author.date);
     //добавить аттрибут datime в формате YYYY-MM-DD hh:mm
     commitCard.appendChild(date);
 
