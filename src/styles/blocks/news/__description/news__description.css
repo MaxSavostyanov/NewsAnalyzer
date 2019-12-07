@@ -1,15 +1,10 @@
 .news__description {
   margin: 0;
-  margin-bottom:28px;
+  margin-bottom: 28px;
   padding: 0 24px;
-  height: 310px;
-  box-sizing: content-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-}
-
-@media screen and (max-width: 900px) {
-  .news__description {
-    padding: 0 16px;
-    height: 185px;
-  }
+  text-overflow: ellipsis;
 }
