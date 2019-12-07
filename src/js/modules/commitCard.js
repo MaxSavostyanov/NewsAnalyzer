@@ -34,16 +34,20 @@ export class CommitCard {
     avatar.alt = `аватар ${data.commit.author.name}`;
     author.appendChild(avatar);
 
+    const authorInfo = document.createElement('div');
+    authorInfo.classList.add('commit-card__author-info');
+    author.appendChild(authorInfo);
+
     const name = document.createElement('h3');
     name.classList.add('commit-card__name');
     name.textContent = data.commit.author.name;
-    author.appendChild(name);
+    authorInfo.appendChild(name);
 
     const mail = document.createElement('a');
     mail.classList.add('commit-card__mail');
-    mail.alt = `mailto:${data.commit.author.email}`;
+    mail.href = `mailto:${data.commit.author.email}`;
     mail.textContent = data.commit.author.email;
-    author.appendChild(mail);
+    authorInfo.appendChild(mail);
 
     return template;
   }
