@@ -3,6 +3,7 @@ export const NEWS_API_BASE_URL = 'https://newsapi.org/v2';
 export const SEARCH_TIME_INTERVAL = 6; // В днях
 export const COUNT_ARTICLES = 100; 
 export const STEP_SHOW = 3; 
+export const NOT_FOUND_IMG = './img/search_back.png';
 export const GITHUB_BASE_URL = 'https://api.github.com'; 
 export const GITHUB_USERNAME = 'MaxSavostyanov'; 
 export const GITHUB_REPO = 'NewsAnalyzer'; 

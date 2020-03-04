@@ -1,4 +1,5 @@
 .commit-card__author {
+  display: flex;
   margin-bottom: 16px;
   min-height: 64px;
 }

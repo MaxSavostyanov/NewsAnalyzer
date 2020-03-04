@@ -1,6 +1,10 @@
 import {
   getFormattedDateRU,
+  getFormattedDateYMDhm,
 } from "./dates";
+import {
+  NOT_FOUND_IMG,
+} from "./variables";
 
 export class NewsCard {
   createCard(newsData) {
@@ -14,8 +18,12 @@ export class NewsCard {
     img.classList.add('news__img');
     img.src = newsData.urlToImage;
     img.alt = 'Изображение по теме новости';
+    img.onerror = () => {
+      img.src = NOT_FOUND_IMG;
+      img.alt = 'Изображение не загрузилось.';
+    }
     template.appendChild(img);
-    
+
     const description = document.createElement('div');
     description.classList.add('news__description');
     template.appendChild(description);
@@ -24,6 +32,7 @@ export class NewsCard {
     date.classList.add('news__date');
     //добавить аттрибут datetime в формате YYYY-MM-DD hh:mm
     date.textContent = getFormattedDateRU(newsData.publishedAt);
+    date.dateTime = getFormattedDateYMDhm(newsData.publishedAt);
     description.appendChild(date);
 
     const heading = document.createElement('h3');

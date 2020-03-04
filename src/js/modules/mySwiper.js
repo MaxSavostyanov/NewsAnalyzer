@@ -11,7 +11,7 @@ export function initializationSwiper(){
     },
   
     // Default parameters
-    slidesPerView: 8,
+    slidesPerView: 1,
     spaceBetween: 8,
     slidesOffsetBefore: -20,
     centeredSlides: true,

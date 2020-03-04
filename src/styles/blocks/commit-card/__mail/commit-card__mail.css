@@ -6,4 +6,14 @@
   font-size: 14px;
   line-height: 22px;
   color: #1A1B22;
+  text-decoration: none;
+  transition: color ease-in .2s;
+}
+
+.commit-card__mail:hover{
+  color: #347EFF;
+}
+
+.commit-card__mail:active{
+  color: #2f71e5;
 }
